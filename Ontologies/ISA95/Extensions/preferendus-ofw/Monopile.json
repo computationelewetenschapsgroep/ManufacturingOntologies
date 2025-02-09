@@ -1,0 +1,22 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:isa95:Monopile;1",
+    "@type": "Interface",
+    "displayName": "Monopile",
+    "description": "A representation of a monopile for offshore wind farm installation.",
+    "comment": "A representation of a monopile for offshore wind farm installation.",
+    "extends": [
+        "dtmi:digitaltwins:isa95:Equipment;1"
+    ],
+    "contents": [
+       
+        {
+            "@type": "Property",
+            "name": "equipmentLevel",
+            "displayName": "Equipment level",
+            "writable": true,
+            "description": "An identification of the level in the role-based equipment hierarchy",
+            "schema": "dtmi:digitaltwins:isa95:Unit;1"
+        }
+    ]
+}
