@@ -11,22 +11,10 @@
     "contents": [
        
         {
-            "@type": "Property",
-            "name": "equipmentLevel",
-            "displayName": "Equipment level",
-            "writable": true,
-            "description": "An identification of the level in the role-based equipment hierarchy",
-            "schema": {
-                "@type": "Enum",
-                "valueSchema": "string",
-                "enumValues": [
-                   { 
-                    "name": "Unit",
-                    "displayName": "Unit",
-                    "enumValue": "unit"
-                } 
-                ]
-            }
+            "@type": "Relationship",
+            "name": "unit",
+            "description": "Reference to a contained unit",
+            "target": "dtmi:digitaltwins:isa95:Unit;1"
         }
     ]
 }
