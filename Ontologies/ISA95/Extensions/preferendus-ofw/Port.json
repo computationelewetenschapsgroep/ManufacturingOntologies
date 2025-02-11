@@ -1,0 +1,13 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:isa95:Port;1",
+    "@type": "Interface",
+    "displayName": "A port",
+    "description": "A port where vessels are docked.",
+    "comment": "A port where vessels are docked",
+    "extends": [
+        "dtmi:digitaltwins:isa95:Area;1",
+        "dtmi:digitaltwins:isa95:SpatialDefinition;1"
+    ]
+   
+}

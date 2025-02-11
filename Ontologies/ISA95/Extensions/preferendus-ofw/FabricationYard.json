@@ -1,0 +1,20 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:isa95:FabricationYard;1",
+    "@type": "Interface",
+    "displayName": "FabricationYard",
+    "description": "A fabrication yard where the monopiles are stored.",
+    "comment": "A representation for the fabrication yard",
+    "extends": [
+        "dtmi:digitaltwins:isa95:StorageZone;1",
+        "dtmi:digitaltwins:isa95:SpatialDefinition;1"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "stores",
+            "description": "Reference to monopiles",
+            "target": "dtmi:digitaltwins:isa95:Monopile;1"
+        }
+    ]
+}

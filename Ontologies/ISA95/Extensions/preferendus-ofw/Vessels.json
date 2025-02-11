@@ -1,0 +1,117 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:digitaltwins:isa95:Vessel;1",
+    "@type": "Interface",
+    "displayName": "Vessel",
+    "description": "A representation for vessel.",
+    "comment": "A representation for vessel.",
+    "extends": [
+        "dtmi:digitaltwins:isa95:Equipment;1"
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "vesselType",
+            "displayName": "Vessel Type",
+            "writable": true,
+            "description": "A type of vessel",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Winchester",
+                        "displayName": "Winchester",
+                        "enumValue": "winchester"
+                    },
+                    {
+                        "name": "Atlas",
+                        "displayName": "Atlas",
+                        "enumValue": "atlas"
+                    },
+                    {
+                        "name": "Edinburg",
+                        "displayName": "Edinburg",
+                        "enumValue": "edinburg"
+                    },
+                    {
+                        "name": "Symphony",
+                        "displayName": "Symphony",
+                        "enumValue": "symphony"
+                    },
+                    {
+                        "name": "Legacy",
+                        "displayName": "Legacy",
+                        "enumValue": "legacy"
+                    },
+                    {
+                        "name": "Scout",
+                        "displayName": "Scout",
+                        "enumValue": "scout"
+                    }
+                ]
+            }
+            
+        },
+        {
+            "@type":"Property",
+            "name": "dayRate",
+            "displayName": "Day Rate",
+            "description": "The daily rate of using the vessel",
+            "schema": "string"
+        },
+        
+        {
+            "@type": "Property",
+            "name": "responsibility",
+            "displayName": "Responsiblity",
+            "writable": true,
+            "description": "Vessel responsible for",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "MonopileTransport",
+                        "displayName": "Monopile Transport",
+                        "enumValue": "MonopileTransport"
+                    },
+                    {
+                        "name": "CraneTransport",
+                        "displayName": "Crane Transport",
+                        "enumValue": "CraneTransport"
+                    },
+                    {
+                        "name": "Hookup",
+                        "displayName": "Hookup",
+                        "enumValue": "Hookup"
+                    },
+                    {
+                        "name": "Towing",
+                        "displayName": "Towing",
+                        "enumValue": "towing"
+                    },
+                    {
+                        "name": "Tensioning",
+                        "displayName": "Tensioning",
+                        "enumValue": "tensioning"
+                    },
+                    {
+                        "name": "Mooring",
+                        "displayName": "Mooring",
+                        "enumValue": "mooring"
+                    }
+                ]
+            }
+            
+        },
+        {
+            "@type":"Relationship",
+            "name": "dockedAt",
+            "displayName": "Docked At",
+            "description": "Port where the vessel is docked",
+            "target": "dtmi:digitaltwins:isa95:Port;1"
+        }
+
+    ]
+}
