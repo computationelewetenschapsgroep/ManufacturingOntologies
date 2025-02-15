@@ -15,6 +15,13 @@
             "name": "stores",
             "description": "Reference to monopiles",
             "target": "dtmi:digitaltwins:isa95:Monopile;1"
+        },
+        {
+            "@type": "Component",
+            "name": "spatialDefinition",
+            "displayName": "Spatial definition",
+            "description": "Spatially defines the equipment as a zero-dimensional point, one dimensional line, or two dimensional shape or three dimensional solid.",
+            "schema": "dtmi:digitaltwins:isa95:SpatialDefinition;1"
         }
     ]
 }

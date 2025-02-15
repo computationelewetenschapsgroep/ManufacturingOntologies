@@ -107,10 +107,38 @@
         },
         {
             "@type":"Relationship",
-            "name": "dockedAt",
-            "displayName": "Docked At",
-            "description": "Port where the vessel is docked",
+            "name": "docksAt",
+            "displayName": "Docks At",
+            "description": "Port where the vessel docks",
             "target": "dtmi:digitaltwins:isa95:Port;1"
+        },
+        {
+            "@type":"Relationship",
+            "name": "loadsAt",
+            "displayName": "Loads At",
+            "description": "FabricationYard where the vessel loads",
+            "target": "dtmi:digitaltwins:isa95:FabricationYard;1"
+        },
+        {
+            "@type":"Relationship",
+            "name": "installsAt",
+            "displayName": "Installs At",
+            "description": "Site where the vessel installs",
+            "target": "dtmi:digitaltwins:isa95:OffshoreWindFarm;1"
+        },
+        {
+            "@type":"Relationship",
+            "name": "transports",
+            "displayName": "Transports",
+            "description": "Transportation of Monopiles",
+            "target": "dtmi:digitaltwins:isa95:Monopile;1"
+        },
+        {
+            "@type":"Relationship",
+            "name": "installs",
+            "displayName": "Installation",
+            "description": "Installation of Monopiles",
+            "target": "dtmi:digitaltwins:isa95:Monopile;1"
         }
 
     ]
